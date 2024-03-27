@@ -3,9 +3,7 @@ from pathlib import Path
 import re
 
 def rename_file(root_folder_path, regex_pattern):
-    print("Called")
     root_folder_path = Path(root_folder_path)
-    print(f'{root_folder_path}')
     renamed = False
     
     for folder_name, _, files in os.walk(root_folder_path):
@@ -22,8 +20,6 @@ def rename_file(root_folder_path, regex_pattern):
                     renamed = True
 
     if renamed:
-        print("Files renamed")
         return 'Renaming process completed.'
     else:
-        print("Files not renamed")
         return 'Files are already renamed.'

@@ -21,9 +21,6 @@ def on_button_click():
     # reg_in = escape(reg_in)
     result_message = rename_file(address_in, reg_in)
     messagebox.showinfo("Result", result_message)
-    print("Folder Dir", address_in)
-    print("Regex: ", reg_in)
-    print(result_message)
 
 # Label
 address_label = tk.Label(text='Folder Dir: ', font=('Helvetica', 12))
